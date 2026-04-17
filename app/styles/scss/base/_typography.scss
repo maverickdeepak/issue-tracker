@@ -1,0 +1,138 @@
+// ============================================================
+//  base/_typography.scss
+//  Base typographic styles — Burnt Linen theme
+// ============================================================
+
+@use '../abstracts/variables' as *;
+
+// ── Headings ─────────────────────────────────────────────────
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-base;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-tight;
+  color: $bl-text-primary;
+  letter-spacing: $letter-spacing-tight;
+}
+
+h1 { font-size: $font-size-4xl; }
+h2 { font-size: $font-size-3xl; }
+h3 { font-size: $font-size-2xl; }
+h4 { font-size: $font-size-xl; }
+h5 { font-size: $font-size-lg; }
+h6 { font-size: $font-size-md; }
+
+// ── Body text ────────────────────────────────────────────────
+p {
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $bl-text-primary;
+
+  & + p {
+    margin-top: $spacing-4;
+  }
+}
+
+// ── Links ────────────────────────────────────────────────────
+a {
+  color: $bl-accent;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: $transition-color;
+
+  &:hover {
+    color: $bl-accent-hover;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $bl-accent;
+    outline-offset: 2px;
+    border-radius: $border-radius-xs;
+  }
+}
+
+// ── Strong & emphasis ────────────────────────────────────────
+strong,
+b {
+  font-weight: $font-weight-bold;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+// ── Small & muted ────────────────────────────────────────────
+small {
+  font-size: $font-size-sm;
+  color: $bl-text-secondary;
+}
+
+.text-muted {
+  color: $bl-text-muted;
+  font-size: $font-size-sm;
+}
+
+// ── Code & pre ───────────────────────────────────────────────
+code {
+  font-family: $font-stack-mono;
+  font-size: $font-size-sm;
+  background-color: $bl-surface;
+  color: $bl-accent;
+  padding: 2px 6px;
+  border-radius: $border-radius-sm;
+  border: $border-width-thin solid $bl-border;
+}
+
+pre {
+  font-family: $font-stack-mono;
+  font-size: $font-size-sm;
+  background-color: $bl-surface;
+  border: $border-width-thin solid $bl-border;
+  border-radius: $border-radius-base;
+  padding: $spacing-4;
+  overflow-x: auto;
+  line-height: $line-height-snug;
+
+  code {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    color: $bl-text-primary;
+  }
+}
+
+// ── Blockquote ───────────────────────────────────────────────
+blockquote {
+  border-left: 3px solid $bl-accent;
+  padding: $spacing-3 $spacing-5;
+  margin: $spacing-6 0;
+  background-color: $bl-accent-light;
+  border-radius: 0 $border-radius-md $border-radius-md 0;
+
+  p {
+    color: $bl-accent-text;
+    font-style: italic;
+    margin: 0;
+  }
+}
+
+// ── Lists ────────────────────────────────────────────────────
+ul,
+ol {
+  padding-left: $spacing-5;
+
+  li {
+    margin-bottom: $spacing-2;
+    line-height: $line-height-base;
+  }
+}
+
+ul { list-style: disc; }
+ol { list-style: decimal; }
+
+// ── Selection ────────────────────────────────────────────────
+::selection {
+  background-color: $bl-accent-light;
+  color: $bl-accent-text;
+}

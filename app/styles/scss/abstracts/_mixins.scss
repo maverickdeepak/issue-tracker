@@ -1,0 +1,40 @@
+@use 'variables' as *;
+
+@mixin btn-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-2;
+
+  height: $btn-height-base;
+  padding: $btn-padding-base;
+  border-radius: $btn-border-radius;
+
+  font-family: $font-family-base;
+  font-size: $btn-font-size;
+  font-weight: $btn-font-weight;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+
+  border: $border-width-base solid transparent;
+  outline: none;
+  transition: $transition-color, transform $transition-fast;
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+@mixin btn-size($height, $padding, $font-size: $btn-font-size) {
+  height: $height;
+  padding: $padding;
+  font-size: $font-size;
+}

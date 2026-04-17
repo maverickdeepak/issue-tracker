@@ -1,0 +1,94 @@
+// ============================================================
+//  base/_base.scss
+//  Global layout primitives & CSS custom properties
+// ============================================================
+
+@use '../abstracts/variables' as *;
+
+// ── CSS Custom Properties (runtime tokens) ───────────────────
+:root {
+  // Colors
+  --color-accent:         #{$bl-accent};
+  --color-accent-hover:   #{$bl-accent-hover};
+  --color-accent-light:   #{$bl-accent-light};
+  --color-bg:             #{$bl-bg};
+  --color-bg-card:        #{$bl-white};
+  --color-bg-surface:     #{$bl-surface};
+  --color-text:           #{$bl-text-primary};
+  --color-text-muted:     #{$bl-text-secondary};
+  --color-border:         #{$bl-border};
+  --color-success:        #{$bl-sage};
+  --color-warning:        #{$bl-amber};
+  --color-danger:         #{$bl-red};
+
+  // Spacing
+  --spacing-1:            #{$spacing-1};
+  --spacing-2:            #{$spacing-2};
+  --spacing-4:            #{$spacing-4};
+  --spacing-6:            #{$spacing-6};
+  --spacing-8:            #{$spacing-8};
+
+  // Radius
+  --radius-sm:            #{$border-radius-sm};
+  --radius-md:            #{$border-radius-md};
+  --radius-lg:            #{$border-radius-lg};
+
+  // Motion
+  --transition-fast:      #{$transition-fast};
+  --transition-base:      #{$transition-base};
+}
+
+// ── Root layout ──────────────────────────────────────────────
+#root,
+#__next {
+  isolation: isolate;
+}
+
+// ── Scrollbar ────────────────────────────────────────────────
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: $bl-surface;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $bl-border-strong;
+  border-radius: $border-radius-full;
+
+  &:hover {
+    background: $bl-text-muted;
+  }
+}
+
+// ── Utility helpers ──────────────────────────────────────────
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: $container-xl;
+  margin-inline: auto;
+  padding-inline: $spacing-6;
+
+  @media (max-width: #{$bp-md}) {
+    padding-inline: $spacing-4;
+  }
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

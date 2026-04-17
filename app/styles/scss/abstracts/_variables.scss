@@ -1,0 +1,374 @@
+// ============================================================
+//  SCSS Variable File — Burnt Linen Design System
+//  Generated: 2026-04-18
+//  Theme: Warm sand · Terracotta · Amber · Sage
+// ============================================================
+
+
+// ------------------------------------------------------------
+//  COLOR — Base Palette
+// ------------------------------------------------------------
+
+$bl-white:            #FFFFFF;
+$bl-bg:               #FAF6F0;
+$bl-surface:          #F0E8DC;
+$bl-surface-deep:     #E8DDD0;
+
+$bl-border:           #E0D4C4;
+$bl-border-strong:    #C8B8A4;
+$bl-border-emphasis:  #A89080;
+
+
+// ------------------------------------------------------------
+//  COLOR — Text
+// ------------------------------------------------------------
+
+$bl-text-primary:     #2C1A0E;
+$bl-text-secondary:   #7A6458;
+$bl-text-muted:       #A89080;
+$bl-text-placeholder: #C0A898;
+$bl-text-inverse:     #FAF6F0;
+
+
+// ------------------------------------------------------------
+//  COLOR — Accent (Terracotta)
+// ------------------------------------------------------------
+
+$bl-accent:           #D85A30;
+$bl-accent-hover:     #C04E26;
+$bl-accent-light:     #FFF0E4;
+$bl-accent-text:      #9A3C10;
+$bl-accent-border:    #D85A30;
+
+
+// ------------------------------------------------------------
+//  COLOR — Amber (Warning)
+// ------------------------------------------------------------
+
+$bl-amber:            #F5A623;
+$bl-amber-hover:      #DC8F0F;
+$bl-amber-light:      #FEF6E0;
+$bl-amber-text:       #7A5010;
+$bl-amber-border:     #E8960F;
+
+
+// ------------------------------------------------------------
+//  COLOR — Sage (Success)
+// ------------------------------------------------------------
+
+$bl-sage:             #2B8A6E;
+$bl-sage-hover:       #207A5E;
+$bl-sage-light:       #E0F4EE;
+$bl-sage-text:        #1A5C46;
+$bl-sage-border:      #2B8A6E;
+
+
+// ------------------------------------------------------------
+//  COLOR — Red (Danger / Critical)
+// ------------------------------------------------------------
+
+$bl-red:              #C0392B;
+$bl-red-hover:        #A32420;
+$bl-red-light:        #FCE8E4;
+$bl-red-text:         #8B1A10;
+$bl-red-border:       #C0392B;
+
+
+// ------------------------------------------------------------
+//  COLOR — Ochre (Info / Neutral accent)
+// ------------------------------------------------------------
+
+$bl-ochre:            #8E6A1A;
+$bl-ochre-light:      #FDF3DC;
+$bl-ochre-text:       #6A4C0E;
+
+
+// ------------------------------------------------------------
+//  COLOR — Semantic Aliases
+// ------------------------------------------------------------
+
+$color-primary:       $bl-accent;
+$color-primary-hover: $bl-accent-hover;
+$color-success:       $bl-sage;
+$color-warning:       $bl-amber;
+$color-danger:        $bl-red;
+$color-info:          $bl-ochre;
+
+$color-bg:            $bl-bg;
+$color-bg-card:       $bl-white;
+$color-bg-surface:    $bl-surface;
+
+$color-text:          $bl-text-primary;
+$color-text-muted:    $bl-text-secondary;
+$color-border:        $bl-border;
+$color-border-strong: $bl-border-strong;
+
+
+// ------------------------------------------------------------
+//  TYPOGRAPHY — Font Stacks
+// ------------------------------------------------------------
+
+$font-stack-sans:     system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+$font-stack-serif:    "Georgia", "Times New Roman", serif;
+$font-stack-mono:     "Fira Code", "Cascadia Code", "JetBrains Mono", ui-monospace, monospace;
+
+$font-family-base:    $font-stack-sans;
+$font-family-code:    $font-stack-mono;
+
+
+// ------------------------------------------------------------
+//  TYPOGRAPHY — Scale
+// ------------------------------------------------------------
+
+$font-size-xs:        11px;
+$font-size-sm:        12px;
+$font-size-base:      14px;
+$font-size-md:        15px;
+$font-size-lg:        16px;
+$font-size-xl:        18px;
+$font-size-2xl:       22px;
+$font-size-3xl:       28px;
+$font-size-4xl:       36px;
+
+
+// ------------------------------------------------------------
+//  TYPOGRAPHY — Weight
+// ------------------------------------------------------------
+
+$font-weight-regular: 400;
+$font-weight-medium:  500;
+$font-weight-bold:    600;
+
+
+// ------------------------------------------------------------
+//  TYPOGRAPHY — Line Height
+// ------------------------------------------------------------
+
+$line-height-tight:   1.3;
+$line-height-snug:    1.5;
+$line-height-base:    1.7;
+$line-height-loose:   2.0;
+
+
+// ------------------------------------------------------------
+//  TYPOGRAPHY — Letter Spacing
+// ------------------------------------------------------------
+
+$letter-spacing-tight:  -0.3px;
+$letter-spacing-normal:  0px;
+$letter-spacing-wide:    0.5px;
+$letter-spacing-wider:   1px;
+$letter-spacing-caps:    1.5px;
+
+
+// ------------------------------------------------------------
+//  SPACING — Base Unit: 8px
+// ------------------------------------------------------------
+
+$spacing-unit:        8;           // unitless — use with calc()
+
+$spacing-1:           4px;
+$spacing-2:           8px;
+$spacing-3:           12px;
+$spacing-4:           16px;
+$spacing-5:           20px;
+$spacing-6:           24px;
+$spacing-8:           32px;
+$spacing-10:          40px;
+$spacing-12:          48px;
+$spacing-16:          64px;
+$spacing-20:          80px;
+$spacing-24:          96px;
+
+
+// ------------------------------------------------------------
+//  BORDER RADIUS
+// ------------------------------------------------------------
+
+$border-radius-none:  0px;
+$border-radius-xs:    2px;
+$border-radius-sm:    4px;
+$border-radius-md:    6px;
+$border-radius-base:  8px;
+$border-radius-lg:    10px;
+$border-radius-xl:    12px;
+$border-radius-2xl:   16px;
+$border-radius-full:  9999px;
+
+
+// ------------------------------------------------------------
+//  BORDER WIDTH
+// ------------------------------------------------------------
+
+$border-width-thin:   0.5px;
+$border-width-base:   1px;
+$border-width-thick:  2px;
+
+
+// ------------------------------------------------------------
+//  SHADOWS
+// ------------------------------------------------------------
+
+$shadow-none:         none;
+$shadow-focus:        0 0 0 3px rgba(216, 90, 48, 0.18);
+$shadow-focus-danger: 0 0 0 3px rgba(192, 57, 43, 0.18);
+$shadow-card:         0 1px 3px rgba(44, 26, 14, 0.06);
+$shadow-card-hover:   0 2px 8px rgba(44, 26, 14, 0.10);
+$shadow-modal:        0 8px 32px rgba(44, 26, 14, 0.14);
+
+
+// ------------------------------------------------------------
+//  Z-INDEX
+// ------------------------------------------------------------
+
+$z-base:              0;
+$z-raised:            10;
+$z-dropdown:          100;
+$z-sticky:            200;
+$z-overlay:           900;
+$z-modal:             1000;
+$z-tooltip:           1100;
+$z-notification:      1200;
+
+
+// ------------------------------------------------------------
+//  MOTION / TRANSITIONS
+// ------------------------------------------------------------
+
+$easing-default:      ease;
+$easing-in:           ease-in;
+$easing-out:          ease-out;
+$easing-in-out:       ease-in-out;
+$easing-spring:       cubic-bezier(0.34, 1.56, 0.64, 1);
+
+$transition-fast:     120ms ease;
+$transition-base:     200ms ease;
+$transition-slow:     350ms ease;
+$transition-color:    color 200ms ease, background-color 200ms ease, border-color 200ms ease;
+
+
+// ------------------------------------------------------------
+//  LAYOUT — Breakpoints
+// ------------------------------------------------------------
+
+$bp-xs:               480px;
+$bp-sm:               640px;
+$bp-md:               768px;
+$bp-lg:               1024px;
+$bp-xl:               1280px;
+$bp-2xl:              1536px;
+
+
+// ------------------------------------------------------------
+//  LAYOUT — Container Widths
+// ------------------------------------------------------------
+
+$container-sm:        640px;
+$container-md:        768px;
+$container-lg:        1024px;
+$container-xl:        1200px;
+$container-full:      100%;
+
+
+// ------------------------------------------------------------
+//  LAYOUT — Grid
+// ------------------------------------------------------------
+
+$grid-columns:        12;
+$grid-gap:            $spacing-6;
+$grid-gap-sm:         $spacing-4;
+
+
+// ------------------------------------------------------------
+//  COMPONENTS — Buttons
+// ------------------------------------------------------------
+
+$btn-height-sm:       30px;
+$btn-height-base:     36px;
+$btn-height-lg:       44px;
+
+$btn-padding-sm:      0 10px;
+$btn-padding-base:    0 16px;
+$btn-padding-lg:      0 24px;
+
+$btn-font-size:       $font-size-sm;
+$btn-font-weight:     $font-weight-medium;
+$btn-border-radius:   $border-radius-md;
+
+$btn-primary-bg:      $bl-accent;
+$btn-primary-color:   $bl-white;
+$btn-primary-hover:   $bl-accent-hover;
+
+
+// ------------------------------------------------------------
+//  COMPONENTS — Inputs
+// ------------------------------------------------------------
+
+$input-height:        36px;
+$input-height-lg:     44px;
+$input-padding:       7px 12px;
+$input-font-size:     $font-size-base;
+$input-bg:            $bl-bg;
+$input-border:        $bl-border-strong;
+$input-border-focus:  $bl-accent;
+$input-shadow-focus:  $shadow-focus;
+$input-radius:        $border-radius-md;
+$input-color:         $bl-text-primary;
+$input-placeholder:   $bl-text-placeholder;
+
+
+// ------------------------------------------------------------
+//  COMPONENTS — Badges / Pills
+// ------------------------------------------------------------
+
+$badge-font-size:     10px;
+$badge-font-weight:   $font-weight-medium;
+$badge-padding:       2px 8px;
+$badge-radius:        $border-radius-full;
+
+$badge-open-bg:       $bl-accent-light;
+$badge-open-color:    $bl-accent-text;
+
+$badge-resolved-bg:   $bl-sage-light;
+$badge-resolved-color:$bl-sage-text;
+
+$badge-wip-bg:        $bl-amber-light;
+$badge-wip-color:     $bl-amber-text;
+
+$badge-critical-bg:   $bl-red-light;
+$badge-critical-color:$bl-red-text;
+
+
+// ------------------------------------------------------------
+//  COMPONENTS — Cards
+// ------------------------------------------------------------
+
+$card-bg:             $bl-white;
+$card-border:         $bl-border;
+$card-radius:         $border-radius-lg;
+$card-padding:        16px 20px;
+$card-padding-sm:     12px 16px;
+
+
+// ------------------------------------------------------------
+//  COMPONENTS — Code Blocks
+// ------------------------------------------------------------
+
+$code-bg:             $bl-surface;
+$code-border:         $bl-border;
+$code-radius:         $border-radius-md;
+$code-padding:        10px 14px;
+$code-font-size:      12px;
+$code-font-family:    $font-stack-mono;
+
+$code-color-default:  $bl-text-primary;
+$code-color-error:    $bl-red;
+$code-color-success:  $bl-sage;
+$code-color-comment:  $bl-text-muted;
+$code-color-keyword:  $bl-accent;
+$code-color-string:   $bl-ochre;
+
+
+// ============================================================
+//  END OF FILE
+// ============================================================

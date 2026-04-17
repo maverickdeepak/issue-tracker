@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Noto_Sans } from "next/font/google";
-import "./globals.css";
-import { cn } from "@/lib/utils";
+import './styles/scss/main.scss'
+import Navbar from "@/app/core-components/Navbar";
 
 const notoSans = Noto_Sans({subsets:['latin'],variable:'--font-sans'});
 
@@ -28,9 +28,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-sans", notoSans.variable)}
+      className={
+      geistSans.variable + " " + geistMono.variable + " " + notoSans.variable
+      }
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body>
+      <Navbar />
+      {children}
+      </body>
     </html>
   );
 }

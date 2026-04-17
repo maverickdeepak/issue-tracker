@@ -1,0 +1,25 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+
+  &__left {
+    &__logo {
+      font-size: 3rem;
+    }
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 3rem;
+
+      li {
+        text-decoration: none;
+      }
+    }
+  }
+}
